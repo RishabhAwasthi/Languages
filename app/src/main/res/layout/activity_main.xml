@@ -13,16 +13,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
-    tools:context="com.example.android.miwok.MainActivity">
+    tools:context="com.example.android.miwok.MainActivity"> -->
 
     <!-- Numbers category -->
-    <FrameLayout
+   <!-- <FrameLayout
         android:layout_width="match_parent"
         android:background="@color/category_numbers"
         android:layout_height="0dp"
@@ -34,10 +34,10 @@
             android:text="@string/category_numbers"
             android:textAlignment="center"
             />
-    </FrameLayout>
+    </FrameLayout> -->
 
     <!-- Family category -->
-    <FrameLayout
+   <!-- <FrameLayout
         android:layout_width="match_parent"
         android:background="@color/category_family"
         android:layout_height="0dp"
@@ -49,10 +49,10 @@
             android:text="@string/category_family"
             android:textAlignment="center"
             />
-    </FrameLayout>
+    </FrameLayout> -->
 
     <!-- Colors category -->
-    <FrameLayout
+   <!-- <FrameLayout
         android:layout_width="match_parent"
         android:background="@color/category_colors"
         android:layout_height="0dp"
@@ -63,10 +63,10 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_colors" />
-    </FrameLayout>
+    </FrameLayout> -->
 
     <!-- Phrases category -->
-    <FrameLayout
+   <!-- <FrameLayout
         android:layout_width="match_parent"
         android:background="@color/category_phrases"
         android:layout_height="0dp"
@@ -77,5 +77,18 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_phrases" />
-    </FrameLayout>
+    </FrameLayout> -->
+<!--</LinearLayout> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.miwok.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
