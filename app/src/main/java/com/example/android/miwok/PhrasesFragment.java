@@ -22,25 +22,6 @@ import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
  */
 public class PhrasesFragment extends Fragment {
 
-   /* public static final String ARG_PAGE = "ARG_PAGE";
-
-    private int mPage;
-
-    public static PhrasesFragment newInstance(int page) {
-        Bundle args = new Bundle();
-        args.putInt(ARG_PAGE, page);
-        PhrasesFragment fragment = new PhrasesFragment();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mPage = getArguments().getInt(ARG_PAGE);
-    }
-
-*/
 
     private MediaPlayer mMediaPlayer;
     private AudioManager audioManager;
@@ -119,9 +100,6 @@ public class PhrasesFragment extends Fragment {
                         AudioManager.AUDIOFOCUS_GAIN);
 
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-
-                    // Start playback.
-
 
                     // Create and setup the {@link MediaPlayer} for the audio resource associated
                     // with the current word

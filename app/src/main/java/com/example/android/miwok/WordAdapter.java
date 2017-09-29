@@ -15,10 +15,12 @@ import java.util.ArrayList;
  */
 
 public class WordAdapter extends ArrayAdapter<Word> {
+   // private int mcolorId;
 
     public WordAdapter(Activity context, ArrayList<Word> words) {
 
         super(context,0, words);
+
     }
 
 
@@ -56,9 +58,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
         else
             iconView.setVisibility(View.GONE);
+       /* View textContainer = listItemView.findViewById(R.id.text_container);
 
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
-        // so that it can be shown in the ListView
+        int color = ContextCompat.getColor(getContext(),mcolorId);
+        textContainer.setBackgroundColor(color);*/
+
         return listItemView;
     }
 
