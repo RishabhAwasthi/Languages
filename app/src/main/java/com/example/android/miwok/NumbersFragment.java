@@ -21,6 +21,33 @@ import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
  * A simple {@link Fragment} subclass.
  */
 public class NumbersFragment extends Fragment {
+
+   /* public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
+
+    public static NumbersFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        NumbersFragment fragment = new NumbersFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
+    }
+
+*/
+
+
+
+
+
+
+
+
     private MediaPlayer mMediaPlayer;
     private AudioManager audioManager;
 
